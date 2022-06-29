@@ -45,7 +45,7 @@ resource "oci_core_instance" "ubuntu_1" {
   is_pv_encryption_in_transit_enabled = "true"
 
   metadata = {
-    "ssh_authorized_keys" = tls_private_key.default_node_ssh_access.public_key_openssh
+    "ssh_authorized_keys" = var.ssh_pub_key
   }
 
   shape = "VM.Standard.A1.Flex"
@@ -112,7 +112,7 @@ resource "oci_core_instance" "ubuntu_1" {
 #   is_pv_encryption_in_transit_enabled = "true"
 
 #   metadata = {
-#     "ssh_authorized_keys" = tls_private_key.default_node_ssh_access.public_key_openssh
+#     "ssh_authorized_keys" = var.ssh_pub_key
 #   }
 
 #   shape = "VM.Standard.A1.Flex"
@@ -178,7 +178,7 @@ resource "oci_core_instance" "ubuntu_1" {
 #   is_pv_encryption_in_transit_enabled = "true"
 
 #   metadata = {
-#     "ssh_authorized_keys" = tls_private_key.default_node_ssh_access.public_key_openssh
+#     "ssh_authorized_keys" = var.ssh_pub_key
 #   }
 
 #   shape = "VM.Standard.A1.Flex"
@@ -199,7 +199,7 @@ resource "oci_core_instance" "ubuntu_1" {
 # }
 
 
-#NODE 3
+#NODE 4
 # resource "oci_core_instance" "ubuntu_4" {
 #   agent_config {
 #     is_management_disabled = "false"
@@ -244,7 +244,7 @@ resource "oci_core_instance" "ubuntu_1" {
 #   is_pv_encryption_in_transit_enabled = "true"
 
 #   metadata = {
-#     "ssh_authorized_keys" = tls_private_key.default_node_ssh_access.public_key_openssh
+#     "ssh_authorized_keys" = var.ssh_pub_key
 #   }
 
 #   shape = "VM.Standard.A1.Flex"
