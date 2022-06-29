@@ -11,7 +11,7 @@ data "oci_core_images" "list_images" {
 
     #Optional
     operating_system = "Canonical Ubuntu"
-    operating_system_version = "20.04"
+    operating_system_version = "22.04"
     shape = "VM.Standard.A1.Flex"
     state = "AVAILABLE"
     sort_by = "TIMECREATED"
