@@ -5,6 +5,7 @@ oci_user_ocid           = ""
 oci_tenancy_ocid        = ""
 oci_compartment_ocid    = ""
 oci_region              = ""
+ssh_pub_key             = ""
 
 # CLOUDFLARE VARIABLES
 cf_email                = ""
