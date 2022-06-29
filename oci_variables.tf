@@ -4,6 +4,7 @@ variable "oci_user_ocid" {} # tfvars
 variable "oci_fingerprint" {} # tfvars
 variable "oci_private_key_path" {} # tfvars
 variable "oci_region" {} # tfvars
+variable "ssh_pub_key" {} # tfavs
 
 
 # optional variable, oci can select it automaticly
