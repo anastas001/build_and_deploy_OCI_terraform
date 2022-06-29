@@ -1,2 +1,4 @@
 .terraform
 .terraform.lock.hcl
+privkey.pem
+pubkey.pem
